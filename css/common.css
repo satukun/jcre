@@ -1,0 +1,735 @@
+.datepicker{
+  padding: 0;
+  border-radius: 0;
+}
+
+.datepicker-months{
+  border-radius: 0;
+}
+.datepicker td,.datepicker th {
+  border-radius: 0;
+  white-space: nowrap;
+}
+.datepicker th.prev,
+.datepicker th.next{
+  position: relative;
+}
+.datepicker th.prev:before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: translate(14px, -50%) rotate(-45deg);
+  top: 50%;
+  left: 0;
+}
+.datepicker th.next:before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: translate(-14px, -50%) rotate(135deg);
+  top: 50%;
+  right: 0;
+}
+
+.datepicker table tr td span {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  margin: 1%;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 0;
+  width: 24.933%;
+}
+.table-condensed{
+  width: 260px;
+  min-width: 260px;
+}
+
+.table-condensed thead tr:nth-child(2){
+  background-color: #1362ae;
+  color: #fff;
+  margin-top: -15px;
+  margin-right: -20px;
+  margin-left: -20px;
+  margin-bottom: 10px;
+  height: 30px;
+  line-height: 2;
+}
+
+.table-condensed thead tr:nth-child(2) th.prev{
+  color: #1362ae;
+}
+
+.table-condensed thead tr:nth-child(2) th.next{
+  color: #1362ae;
+}
+
+.table-condensed thead tr:nth-child(2) th.prev:hover,
+.table-condensed thead tr:nth-child(2) th.next:hover{
+  color: #fff;
+}
+
+.table-condensed thead th{
+  padding: 0;
+  font-size: 14px;
+}
+.table-condensed tbody td{
+  padding: 15px 20px;
+}
+.table-condensed tbody td span.focused,
+.table-condensed tbody td span.active{
+  background-color: #e7eff7!important;
+  background-image: none!important;
+  text-shadow:none!important;
+  color: #333!important;
+  border-radius: 0;
+  border: none;
+}
+.table-condensed tbody td span:hover{
+  background-color: #e7eff7!important;
+  border-radius: 0;
+  border: none;
+}
+.table-condensed tbody td.day{
+  width: 14.285714285714286%;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  height: 30px;
+  line-height: 28px;
+}
+
+.table-condensed tbody td.active{
+  background-color: #e7eff7!important;
+  background-image: none!important;
+  text-shadow:none!important;
+  color: #333!important;
+  border-radius: 0;
+  border: none;
+}
+
+.table-condensed tbody td.day:hover{
+  background-color: #e7eff7!important;
+  background-image: none!important;
+  text-shadow:none!important;
+  color: #333!important;
+  border-radius: 0;
+  border: none;
+}
+
+
+.m-header .dropdown-menu.show a {
+  position: relative;
+}
+.m-header .dropdown-menu.show a:first-child:before {
+  position: absolute;
+  content: "";
+  display: block;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  right: 10px;
+  top: -5px;
+  z-index: 0;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+}
+.m-header .dropdown-menu.show a:first-child:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 10px;
+  position: absolute;
+  top: -1px;
+  right: 10px;
+  z-index: 10;
+  border-top: 1px solid #fff;
+}
+
+.modal-dialog-centered .modal-header--modal {
+  padding: 15px 20px;
+}
+
+.modal-lg,
+.modal-xl {
+  max-width: 640px;
+}
+
+.close{
+  opacity: 1;
+}
+
+
+
+.sticky-table{
+  width: 100%;
+  overflow: auto;
+  font-size: 14px;
+  border: 1px solid #dadada;
+  background-color: #fff;
+  position: relative;
+}
+
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f5f6f7;
+}
+
+
+
+table {
+  width: 100%;
+  min-width: 1280px;
+}
+
+.datepicker-days .table-condensed thead th{
+  vertical-align: middle;
+}
+
+.datepicker-days .table-condensed thead tr:nth-child(3) {
+  height: 30px;
+}
+
+.datepicker-decades .table-condensed .focused,
+.datepicker-years .table-condensed .focused,
+.datepicker-months .table-condensed .focused{
+  background-color: #3db2e1 !important;
+  color: white!important;
+}
+.datepicker-decades .table-condensed .prev:hover,
+.datepicker-years .table-condensed .prev:hover,
+.datepicker-months .table-condensed .prev:hover{
+  background-color: #1362ae;
+  color: transparent!important;
+}
+
+.datepicker-decades .table-condensed .next:hover,
+.datepicker-years .table-condensed .next:hover,
+.datepicker-months .table-condensed .next:hover{
+  background-color: #1362ae;
+  color: transparent!important;
+}
+
+.datepicker .datepicker-switch:hover{
+  background-color: #1362ae;
+}
+
+.m-copyright {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 10px;
+  color: #333333;
+  position: relative;
+}
+
+
+.m-copyright--all{
+  bottom: 0;
+  left: 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 10px;
+  color: #333333;
+  /* flex: 1; */
+  position: absolute;
+  padding: 20px 0;
+}
+
+.chartBox{
+  height:400px;
+  position: relative;
+}
+
+
+/* .p-main{
+  padding: 30px 30px 10px;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+} */
+
+
+.a-notification__btnset [type=button],
+.a-notification__btnset [type=reset],
+.a-notification__btnset [type=submit],
+button {
+  -webkit-appearance: none;
+}
+
+.a-ButtonSet .btn:hover{
+  opacity: 1;
+}
+
+.a-ButtonSet .a-btn{
+  width: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-secondary.focus,
+.btn-secondary:focus {
+  box-shadow: none!important;
+}
+
+.l-Content {
+  background-color: #f5f6f7;
+  display: flex;
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.l-Content--main{
+  flex-direction: column;
+  display: flex;
+  overflow: auto;
+  justify-content: space-between;
+}
+.l-Content--mainTop{
+  display: none;
+}
+
+/* IE - 印刷プレビューが表示できない問題対応*/
+_:-ms-lang(x)::-ms-backdrop, .l-Content--main{
+	display: inline;
+}
+_:-ms-lang(x)::-ms-backdrop, .m-copyright{
+	display: block !important;
+}
+
+/* IE -  余分な空白が印刷されてしまう問題への対応*/
+@media print{
+	_:-ms-lang(x)::-ms-backdrop, #logoutForm,#previousForm,#nextForm{
+		display:none;
+	}
+}
+
+.o-Sidebar {
+  min-width: 120px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.l-Content--right {
+  width: calc(100% - 120px);
+}
+
+.l-Content--right--notification{
+  background-color: #fff;
+}
+
+.p-main--login{
+  overflow:hidden;
+}
+
+
+.a-ButtonSet .btn:last-child {
+  width: 160px;
+}
+
+.a-ButtonSet .btn .form-group {
+  width: 90px;
+}
+
+.svg--datapickerColor{
+  fill: rgb(153, 153, 153);
+}
+
+.svg--datapickerSize{
+  width: 20px;
+  height: 20px;
+}
+
+.svg--sidebarColor{
+  fill: rgb(255, 255, 255);
+}
+
+.svg--sidebarColor--none{
+  fill: none;
+}
+
+.svg--sidebarSize--top{
+  width: 34px;
+  height: 36px;
+}
+
+.svg--sidebarSize--summary{
+  width: 36px;
+  height: 36px;
+}
+
+.svg--sidebarSize--comparison{
+  width: 34px;
+  height: 36px;
+}
+
+.svg--sidebarSize--measurement{
+  width: 39px;
+  height: 38px;
+}
+
+.svg--sidebarSize--facility{
+  width: 35px;
+  height: 37px;
+}
+
+.svg--sidebarSize--real-time{
+  width: 35px;
+  height: 37px;
+}
+
+.svg--sidebarSize--download{
+  width: 41px;
+  height: 40px;
+  stroke:#fff;
+  stroke-width:2;
+}
+
+.svg--sidebarSize--maitenance{
+  width: 35px;
+  height: 37px;
+}
+
+.svg--errorColor{
+  fill:rgb(19, 98, 174);
+}
+
+.svg--errorColorSize{
+  width: 77px;
+  height: 66px;
+}
+
+
+.a-amount {
+  margin-bottom: 30px;
+}
+
+.a-amount:last-child {
+  margin-bottom: 0px;
+}
+
+a.is-disable,
+a.is-disable:hover,
+a.is-disable:active  {
+  background-color: #e9ecef!important;
+  color: #bbb!important;
+  cursor: default!important;
+  border: 1px solid #dadada!important;
+}
+
+a.is-disable .form-group .custom-select{
+  color: #bbb!important;
+}
+.vdp-datepicker input{
+  transition: .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.vdp-datepicker input:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+.sk-folding-cubeWrap{
+  background: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 10000;
+  top:0;
+  left: 0;
+}
+
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  transform: translate(-50%,-50%)rotateZ(45deg);
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1362ae;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+  -webkit-transform: perspective(140px) rotateX(-180deg);
+          transform: perspective(140px) rotateX(-180deg);
+  opacity: 0;
+  } 25%, 75% {
+  -webkit-transform: perspective(140px) rotateX(0deg);
+          transform: perspective(140px) rotateX(0deg);
+  opacity: 1;
+  } 90%, 100% {
+  -webkit-transform: perspective(140px) rotateY(180deg);
+          transform: perspective(140px) rotateY(180deg);
+  opacity: 0;
+  }
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+  -webkit-transform: perspective(140px) rotateX(-180deg);
+          transform: perspective(140px) rotateX(-180deg);
+  opacity: 0;
+  } 25%, 75% {
+  -webkit-transform: perspective(140px) rotateX(0deg);
+          transform: perspective(140px) rotateX(0deg);
+  opacity: 1;
+  } 90%, 100% {
+  -webkit-transform: perspective(140px) rotateY(180deg);
+          transform: perspective(140px) rotateY(180deg);
+  opacity: 0;
+  }
+}
+
+
+.m-copyright{
+  display: none;
+}
+
+.p-main--top{
+  display: none;
+}
+
+.a-amount .p-canvas{
+  position: relative;
+}
+
+
+.a-legend__Box--red:before {
+  background-color: #ff0000;
+}
+
+.a-legend__Box--blue:before {
+  background-color: #0000ff;
+}
+
+.a-legend__Box--green:before {
+  background-color: #008000;
+}
+
+.a-legend__Box--gold:before {
+  background-color: #ffd700;
+}
+
+.a-legend__Box--purple:before {
+  background-color: #800080;
+}
+
+.a-legend__Box--orange:before {
+  background-color: #ffa500;
+}
+
+
+
+
+.a-legend__Box--black:before {
+  background-color: #800000;
+}
+
+.a-legend__Box--deepPink:before {
+  background-color: #ff1493;
+}
+
+.a-legend__Box--limeGreen:before {
+  background-color: #32cd32;
+}
+
+.a-legend__Box--yellow:before {
+  background-color: #ffff00;
+}
+
+.a-legend__Box--salmon:before {
+  background-color: #fa8072;
+}
+
+
+
+
+.a-legend__Box--lightSkyBlue:before {
+  background-color: #87cefa;
+}
+
+.a-legend__Box--lightGreen:before {
+  background-color: #90ee90;
+}
+
+.a-legend__Box--silver:before {
+  background-color: #c0c0c0;
+}
+
+.a-legend__Box--violet:before {
+  background-color: #ee82ee;
+}
+
+.a-legend__Box--moccasin:before {
+  background-color: #ffe4b5;
+}
+
+
+
+
+
+
+.a-legend__Box--darkGray:before {
+  background-color: #a9a9a9;
+}
+
+.a-legend__Box--pink:before {
+  background-color: #ffc0cb;
+}
+
+.a-legend__Box--greenYellow:before {
+  background-color: #adff2f;
+}
+
+.a-legend__Box--lightYellow:before {
+  background-color: #ffff80;
+}
+
+.a-legend__Box--default:before {
+  background-color: #e5e5e5;
+}
+
+
+.a-legend, .a-legend__Inner{
+  flex-flow: wrap;
+  line-height: 1.5;
+}
+
+img.header-logo{
+  height: 50px;
+}
+
+
+
+/* 天気情報 */
+.weatherInfo {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.8vw;
+  margin-left: 1%;
+}
+
+.representativeCityName {
+  width: 8%;
+}
+
+.weatherItemName {
+  display: flex;
+  width: 15%;
+  justify-content: space-around;
+}
+
+.weatherForecastData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13%;
+}
+
+img.weather-icon{
+  height: 30px;
+}
+
+.weatherNameDisplayFrame {
+  position   : relative;                /* 指定した分だけ相対的に移動 */
+  margin-right : 5px;                   /* 各日付の間を設定 */
+}
+.weatherNameDisplayFrame:hover .weatherName {
+  display: inline;                /* インライン要素として表示 */
+}
+.weatherName {
+  position   : absolute;                /* 親要素を基準 */
+  display: none;                        /* 要素を非表示 */
+  padding: 2px;                         /* テキストの前後の余白 */
+  background-color: rgba(102, 102, 255, 0.50);       /* 背景色（透明度） */
+  width:60px;                          /* 吹き出し全体の幅 */
+  left : 30%;                           /* 表示位置 */
+  top : 100%;                           /* 表示位置 */
+  margin-top : 12px;                    /* 表示位置 */
+  font-size: 80%;                       /* 文字サイズ */
+  z-index: 100;                         /* スタックレベル */
+}
+.weatherName:after{
+  border-bottom: 12px solid rgba(102, 102, 255, 0.50); /* 吹き出し口の高さ・色 */
+  border-left: 10px solid transparent;    /* 吹き出し口の幅１／２ */
+  border-right: 10px solid transparent;   /* 吹き出し口の幅１／２ */
+  top: -12px;                             /* 吹き出し口の位置調整 */
+  left : 5%;                              /* 吹き出し口の横位置 */
+  content: "";                       /* コンテンツの挿入 */
+  position: absolute;                /* 親要素を基準 */
+}
+
+.unit {
+  padding-bottom: 10px;
+}
+
+.sunsetTime {
+  text-align: center;
+}

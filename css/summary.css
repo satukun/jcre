@@ -1,0 +1,282 @@
+.p-main--summary .a-amount--left {
+  padding: 0 30px 0 0
+}
+
+.p-main--summary .a-amount__box {
+  width: 140px;
+  margin-bottom: 0
+}
+
+
+.p-main--summary__Inner thead tr .sticky-cell{
+  width: 250px;
+}
+
+
+.p-main--summary__Inner .a-tbl__wrap--body--details tr td,
+.p-main--summary__Inner .a-tbl__wrap--body--entire tr td {
+  text-align: right;
+  border-right: 1px solid #dadada;
+}
+
+
+
+
+.p-main--summary__Inner .a-tbl__wrap--head--details tr th {
+  width: 100%;
+  white-space: nowrap;
+}
+
+
+.p-main--summary__Inner .sticky-header .sticky-cell{
+  width: 254px
+}
+
+
+.p-main--summary__Inner th.sticky-cell{
+  outline: none!important;
+}
+
+.a-tbl__wrap--body tr td{
+  border-right: 1px solid #dadada;
+}
+
+
+.a-tbl__wrap--body tr td span {
+  display: flex;
+  height: 100%;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-tbl__wrap--body tr:nth-child(even) {
+  background-color: #fff;
+}
+
+
+.a-tbl__wrap--head {
+  height: 60px;
+}
+
+.a-tbl__wrap--head th span {
+  width: 100%;
+  display: block;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid #3d9ed3;
+  background-color: #fff;
+}
+
+.a-tbl__wrap--head th span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 58px;
+  z-index: 1300;
+  width: calc(100% + 1px);
+  left: 0px;
+}
+
+.a-tbl__wrap--head th span:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  z-index: 100;
+  height: 100%;
+  width: 1px;
+  background-color: #dadada;
+  right: -1px;
+}
+
+.a-tbl__wrap--head th:first-child span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1300;
+  height: 2px;
+  width: calc(100% + 1px);
+}
+
+.a-tbl__wrap--head th:first-child span:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  z-index: 100;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  border-left: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  right: -3px;
+}
+
+.a-tbl__wrap--head tr {
+  height: 60px;
+}
+
+.a-tbl__wrap--head th {
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
+}
+
+.a-tbl__wrap--head--kwh tr th, .a-tbl__wrap--head--yen tr th {
+  white-space: normal;
+}
+
+.a-tbl__wrap--head--kwh tr th:first-child, .a-tbl__wrap--head--yen tr th:first-child {
+  width: 254px;
+}
+
+.a-tbl__wrap--head--details tr th {
+  width: 70px;
+  white-space: nowrap;
+}
+
+.a-tbl__wrap--head--details tr th:first-child {
+  width: 150px;
+}
+
+.a-tbl__wrap--head--entire tr th {
+  white-space: nowrap;
+}
+
+.a-tbl__wrap--head--entire tr th:first-child {
+  width: 150px;
+}
+
+.a-tbl__wrap--body tr:nth-child(even) th span{
+  background-color: #fff;
+}
+
+.a-tbl__wrap--body tr:nth-child(odd) th span{
+  background-color: #f5f6f7;
+}
+
+
+.a-tbl__wrap--body--kwh tr th span {
+  text-indent: 2em !important;
+}
+
+.a-tbl__wrap--body--kwh tr:nth-child(4n) {
+  border-bottom: 3px double #dadada;
+}
+
+.a-tbl__wrap--body--kwh tr:nth-child(4n+1) th:first-child span {
+  text-indent: 1em !important;
+}
+
+.a-tbl__wrap--body--yen tr th:first-child span {
+  text-indent: 1em !important;
+}
+
+.a-tbl__wrap--body--kwh tr:nth-child(1n+1) th:first-child, .a-tbl__wrap--body--kwh tr:nth-child(3n+1) th:first-child, .a-tbl__wrap--body--yen tr:nth-child(1n+1) th:first-child, .a-tbl__wrap--body--yen tr:nth-child(3n+1) th:first-child, .a-tbl__wrap--body--details tr:nth-child(1n+1) th:first-child, .a-tbl__wrap--body--details tr:nth-child(3n+1) th:first-child, .a-tbl__wrap--body--entire tr:nth-child(1n+1) th:first-child, .a-tbl__wrap--body--entire tr:nth-child(3n+1) th:first-child {
+  background-color: transparent
+}
+
+.a-tbl__wrap--body--kwh tr:nth-child(2n+1) th:first-child, .a-tbl__wrap--body--kwh tr:nth-child(4n+1) th:first-child, .a-tbl__wrap--body--yen tr:nth-child(2n+1) th:first-child, .a-tbl__wrap--body--yen tr:nth-child(4n+1) th:first-child, .a-tbl__wrap--body--details tr:nth-child(2n+1) th:first-child, .a-tbl__wrap--body--details tr:nth-child(4n+1) th:first-child, .a-tbl__wrap--body--entire tr:nth-child(2n+1) th:first-child, .a-tbl__wrap--body--entire tr:nth-child(4n+1) th:first-child {
+  background-color: transparent;
+}
+
+.a-tbl__wrap--body--kwh tr:nth-child(4n+1) th:first-child, .a-tbl__wrap--body--yen tr:nth-child(4n+1) th:first-child, .a-tbl__wrap--body--details tr:nth-child(4n+1) th:first-child, .a-tbl__wrap--body--entire tr:nth-child(4n+1) th:first-child {
+  text-indent: 0;
+}
+
+.a-tbl__wrap--body--yen tr th, .a-tbl__wrap--body--details tr th, .a-tbl__wrap--body--entire tr th {
+  text-indent: 0em;
+}
+
+.a-tbl__wrap--body--details tr th:first-child span, .a-tbl__wrap--body--entire tr th:first-child span {
+  justify-content: flex-start;
+  text-indent: 1em !important;
+}
+
+.a-tbl__wrap--body--details tr td, .a-tbl__wrap--body--entire tr td {
+  text-align: center;
+}
+
+.a-tbl__wrap--body--details td.red {
+  color: #ff5858;
+}
+
+.a-tbl__wrap--body--details td.red span {
+  color: #ff5858;
+  background-color: rgba(255, 88, 88, 0.4);
+}
+
+.a-tbl__wrap--body--details td.green {
+  color: #1ec1a0;
+}
+
+.a-tbl__wrap--body--details td.green span {
+  color: #1ec1a0;
+  background-color: rgba(30, 193, 160, 0.4);
+}
+
+
+
+
+.table td,
+.table th {
+  border-top: none;
+}
+
+
+.unit-price-area {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+#unitPrice {
+  width: 85px;
+  height: 30px;
+}
+
+#price {
+  display: flex;
+  align-items: center;
+}
+
+#price .dummy {
+  display: none;
+}
+
+.unit-label {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#unit-price-display {
+  display: block;
+  border: 1px solid;
+  width: 120px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.modal-footer .btn:first-child {
+  display: block;
+}
+.modal-footer .btn-unit-price {
+  width: 110px;
+  font-size: 14px;
+  font-weight: normal;
+}
