@@ -1,11 +1,13 @@
 /* いそむらさん 専用*/
 /* ヘッダーは全ページでレスポンシブになります */
+/* headerArea */
+.m-header{}
 
+/* menuArea Compatible with 768px or less */
+.o-Sidebar.l-Content--left {}
 
 
 
 /* 林さん 専用*/
-/* 分析サマリ画面のみレスポンシブです */
-#Responsive-block.l-Content--main{
-    
-}
+/* 分析サマリ画面のみレスポンシブです#Responsive-block内で書いていただければと思います！ */
+#Responsive-block.l-Content--main{}
