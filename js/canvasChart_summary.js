@@ -115,104 +115,111 @@ function _chart(data){
   // ------------------------------
   // チャート描画実行エリア（オプションにobjをセット）
   // ------------------------------
-  var ctx = document.getElementById("myChart").getContext('2d');
-  var myChart = new Chart(ctx, {
-      type: 'horizontalBar',
-      data: obj,
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        legend: {
-          display: false
-        },
-        tooltips: {
-          mode: 'point',
-          intersect: true,
-          callbacks: {
-            title: function(tooltipItem, chart) {
-              return "";
+
+  $(function() {
+    size();
+    $(window).on("resize", function() {size();});
+    function size() {
+      var ctx = document.getElementById("myChart").getContext('2d');
+      var myChart = new Chart(ctx, {
+          type: 'horizontalBar',
+          data: obj,
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            legend: {
+              display: false
             },
-            label: function (tooltipItem, data) {
-              var unit;
-              var value = tooltipItem.value;
-              var digit = 0;
-              if(displayUnitVal == '2') {
-                digit = 4;
-              }
-              value = getCommaSeparatedValue(value, digit);
-              if(unitPrice == null){
-                unit = 'kWh';
-              } else {
-                unit = '円';
-              }
-              if(displayUnitVal == "2") {
-                unit = 't-CO2';
-              }
-              return data.datasets[tooltipItem.datasetIndex].label + ': ' + value + unit;
-            }
-          }
-        },
-        scales: {
-          yAxes: [
-            {
-              display: true,
-              barPercentage: 0.65,
-              maxBarThickness: 10,
-              categoryPercentage: 0.5,
-              ticks: {
-                fontColor: '#333',
-                fontSize: 14,
-                padding: 20
-              },
-              gridLines: {
-                drawBorder: false,
-                display: false
-              }
-            }
-          ],
-          xAxes: [
-            {
-              display: true,
-              barPercentage: 0.65,
-              ticks: {
-                suggestedMax: Maximumvalue * MaximumvalueRate,
-                suggestedMin: 0,
-                stepSize: Math.round(((Maximumvalue * MaximumvalueRate) / stepSize) / digits) * digits,
-                callback: function (value, index, values) {
-                  let digits = 0;
-                  if (displayUnitVal === '2') {
-                    digits = 4;
-                  }
-                  return getCommaSeparatedValue(value, digits);
+            tooltips: {
+              mode: 'point',
+              intersect: true,
+              callbacks: {
+                title: function(tooltipItem, chart) {
+                  return "";
                 },
-                fontColor: '#333',
-                fontSize: 14,
-                padding: 20
-              },
-              gridLines: {
-                drawBorder: false
-              }
-            }
-          ]
-        }
-      },
-      plugins: [{
-          beforeInit: function (chart) {
-            let wordbox = "";
-            chart.data.labels.forEach(function (e, i, a) {
-              e.split('').forEach(function(p,v){
-                if((v%multiple) == 0 && v!=0){
-                  wordbox += "\n";
+                label: function (tooltipItem, data) {
+                  var unit;
+                  var value = tooltipItem.value;
+                  var digit = 0;
+                  if(displayUnitVal == '2') {
+                    digit = 4;
+                  }
+                  value = getCommaSeparatedValue(value, digit);
+                  if(unitPrice == null){
+                    unit = 'kWh';
+                  } else {
+                    unit = '円';
+                  }
+                  if(displayUnitVal == "2") {
+                    unit = 't-CO2';
+                  }
+                  return data.datasets[tooltipItem.datasetIndex].label + ': ' + value + unit;
                 }
-                wordbox += p;
-              });
-              if (/\n/.test(wordbox)) {
-                a[i] = wordbox.split(/\n/)
               }
-              wordbox = "";
-            })
-          }
-      }]
+            },
+            scales: {
+              yAxes: [
+                {
+                  display: true,
+                  barPercentage: 0.65,
+                  maxBarThickness: 10,
+                  categoryPercentage: 0.5,
+                  ticks: {
+                    fontColor: '#333',
+                    fontSize: 14,
+                    padding: 20
+                  },
+                  gridLines: {
+                    drawBorder: false,
+                    display: false
+                  }
+                }
+              ],
+              xAxes: [
+                {
+                  display: true,
+                  barPercentage: 0.65,
+                  ticks: {
+                    suggestedMax: Maximumvalue * MaximumvalueRate,
+                    suggestedMin: 0,
+                    stepSize: Math.round(((Maximumvalue * MaximumvalueRate) / stepSize) / digits) * digits,
+                    callback: function (value, index, values) {
+                      let digits = 0;
+                      if (displayUnitVal === '2') {
+                        digits = 4;
+                      }
+                      return getCommaSeparatedValue(value, digits);
+                    },
+                    fontColor: '#333',
+                    fontSize: 14,
+                    padding: 20
+                  },
+                  gridLines: {
+                    drawBorder: false
+                  }
+                }
+              ]
+            }
+          },
+          plugins: [{
+              beforeInit: function (chart) {
+                let wordbox = "";
+                chart.data.labels.forEach(function (e, i, a) {
+                  e.split('').forEach(function(p,v){
+                    if((v%multiple) == 0 && v!=0){
+                      wordbox += "\n";
+                    }
+                    wordbox += p;
+                  });
+                  if (/\n/.test(wordbox)) {
+                    a[i] = wordbox.split(/\n/)
+                  }
+                  wordbox = "";
+                })
+              }
+          }]
+      });
+    }
   });
 
   return myChart;

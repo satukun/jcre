@@ -10,4 +10,33 @@
 
 /* 林さん 専用*/
 /* 分析サマリ画面のみレスポンシブです#Responsive-block内で書いていただければと思います！ */
-#Responsive-block.l-Content--main{}
+
+#Responsive-block.l-Content--main {
+}
+#Responsive-block.l-Content--main table {
+    min-width: auto;
+}
+#Responsive-block.l-Content--main .l-refine {
+    overflow-x: auto;
+    background-color: white;
+}
+#Responsive-block.l-Content--main canvas {
+}
+.l-Content--right {
+    min-width: auto;
+}
+#Responsive-block.l-Content--main .m-header {
+}
+
+@media screen and (max-width:1280px) {
+    #Responsive-block.l-Content--main {
+    }
+}
+@media screen and (max-width:1024px) {
+    #Responsive-block.l-Content--main {
+    }
+}
+@media screen and (max-width:768px) {
+    #Responsive-block.l-Content--main {
+    }
+}
