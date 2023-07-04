@@ -167,3 +167,62 @@
 /* 林さん 専用*/
 /* 分析サマリ画面のみレスポンシブです#Responsive-block内で書いていただければと思います！ */
 #Responsive-block.l-Content--main {}
+.l-Content--right {
+    min-width: auto;
+}
+
+#Responsive-block.l-Content--main table {
+    min-width: auto;
+}
+
+#Responsive-block.l-Content--main .l-refine {
+    overflow-x: auto;
+    background-color: white;
+}
+
+@media screen and (max-width:1280px) {
+    /* グラフ */
+    #Responsive-block.l-Content--main .p-pagenationWrap{
+        flex-wrap: wrap;
+        gap: 21px 0;
+    }
+
+    #Responsive-block.l-Content--main .o-refine__Inner {
+        flex-wrap: wrap;
+        gap: 21px 0;
+    }
+
+    #Responsive-block.l-Content--main .o-refine button {
+        position: static;
+        margin-top: 21px;
+    }
+}
+@media screen and (max-width:1024px) {
+    #Responsive-block.l-Content--main table {
+        min-width: 1280px;
+    }
+
+    #Responsive-block.l-Content--main .a-amount .p-canvas {
+        width: 100%;
+        padding: 0;
+    }
+
+    #Responsive-block.l-Content--main .a-amount--left {
+        width: 100%;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    #Responsive-block.l-Content--main .a-amount {
+     flex-direction: column-reverse;
+     gap: 40px;
+    }
+}
+@media screen and (max-width:768px) {
+    #Responsive-block.l-Content--main .l-Content--mainTop {
+        min-width: calc(767px - 120px);
+    }
+    #Responsive-block.l-Content--main .l-refine {
+        overflow-x: none;
+    }
+}
