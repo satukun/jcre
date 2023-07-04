@@ -164,6 +164,11 @@
     right: -10px !important;
   }
 }
+@media (max-width: 768px) {
+  .slick-next {
+    display: none !important;
+  }
+}
 
 .slick-next:before {
   background: url(../img/arrow-right.png) !important;
@@ -176,6 +181,11 @@
 @media (max-width: 1023px) {
   .slick-prev {
     left: -4px !important;
+  }
+}
+@media (max-width: 768px) {
+  .slick-prev {
+    display: none !important;
   }
 }
 
