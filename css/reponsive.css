@@ -1,7 +1,163 @@
 /* いそむらさん 専用*/
 /* ヘッダーは全ページでレスポンシブになります */
 /* headerArea */
-.m-header{}
+
+/* m-header */
+.m-header {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* m-header__inner */
+.m-header__inner {
+  display: block;
+  margin-left: auto;
+}
+
+
+/* weatherInfo */
+.weatherInfo {
+  width: 90%;
+}
+@media (max-width: 1280px) {
+  .weatherInfo {
+    width: 90%;
+  }
+}
+
+
+/* representativeCityName */
+.m-header .representativeCityName {
+  width: 5%;
+}
+
+.m-header .representativeCityName div:first-of-type {
+  margin-bottom: 5px;
+}
+
+
+/* weatherItemName */
+.m-header .weatherItemName {
+  width: 12%;
+}
+@media (max-width: 1280px) {
+  .m-header .weatherItemName {
+    width: 10%;
+  }
+}
+
+.m-header .weatherItemName div:first-of-type div:first-of-type {
+  margin-bottom: 5px;
+}
+
+.m-header .weatherItemName div:last-of-type div:first-of-type {
+  margin-bottom: 5px;
+}
+
+.m-header .weatherItemName div:last-of-type div:nth-of-type(2) {
+  margin-bottom: 5px;
+}
+
+
+/* weatherForecastData */
+.m-header .weatherForecastData {
+  width: 12%;
+}
+
+@media (max-width: 1280px) {
+  .m-header .weatherForecastData {
+    width: 20%;
+  }
+}
+
+#slider-weatherForecastData {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1280px) {
+  #slider-weatherForecastData {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+.img.weather-icon {
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .weatherForecastData__sp-none{
+    display: none;
+  }
+}
+
+.slick-initialized .slick-slide {
+  display: flex !important;
+}
+
+
+/* ログイン ドロップダウン */
+.btn.btn-secondary.dropdown-toggle.btn.dropdown-toggle.btn-secondary.btn-sm {
+  position: relative;
+}
+
+.dropdown-toggle:after {
+  position: absolute;
+  top: 50%;
+  right: -6%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+
+/* slick 矢印 */
+.slick-arrow {
+  z-index: 2 !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.slick-arrow:before {
+  opacity: 1 !important;
+  content: "" !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slick-next {
+  right: 5px !important;
+}
+
+.slick-next:before {
+  background: url(../img/arrow-right.png) !important;
+  background-size: contain !important;
+}
+
+.slick-prev {
+  left: 10px !important;
+}
+
+.slick-prev:before {
+  background: url(../img/arrow-left.png) !important;
+  background-size: contain !important;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* menuArea Compatible with 768px or less */
 .o-Sidebar.l-Content--left {}
@@ -10,4 +166,4 @@
 
 /* 林さん 専用*/
 /* 分析サマリ画面のみレスポンシブです#Responsive-block内で書いていただければと思います！ */
-#Responsive-block.l-Content--main{}
+#Responsive-block.l-Content--main {}
