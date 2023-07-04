@@ -8,6 +8,14 @@ $(function () {
         //スライドさせる
         slidesToShow: 4,
         slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024, // 399px以下のサイズに適用
+            settings: {
+            slidesToShow: 2,
+            },
+          },
+        ],
       });
     } else {
       // 1281以上のとき
