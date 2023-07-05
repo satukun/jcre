@@ -322,11 +322,3 @@ img.header-logo{
      gap: 40px;
     }
 }
-@media screen and (max-width:768px) {
-    #Responsive-block.l-Content--main .l-Content--mainTop {
-        min-width: calc(767px - 120px);
-    }
-    #Responsive-block.l-Content--main .l-refine {
-        overflow-x: none;
-    }
-}
