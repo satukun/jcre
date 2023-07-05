@@ -62,7 +62,7 @@ img.header-logo{
 }
 @media (max-width: 1024px) {
   .weatherInfo {
-    column-gap: 1%;
+    column-gap: 2%;
     margin-left: 1%;
   }
 }
@@ -101,6 +101,11 @@ img.header-logo{
 @media (max-width: 1280px) {
   .m-header .weatherItemName {
     width: 95px;
+  }
+}
+@media (max-width: 768px) {
+  .m-header .weatherItemName {
+    display: none;
   }
 }
 .m-header .weatherItemName div:first-of-type div:first-of-type {
@@ -146,17 +151,15 @@ img.header-logo{
   .m-header .weatherForecastData {
     width: 100px;
   }
+  .m-header .weatherForecastData:not(:first-of-type) {
+    display: none;
+  }
 }
 .slick-initialized .slick-slide {
   display: flex !important;
 }
 .img.weather-icon {
   margin: 0 auto;
-}
-@media (max-width: 768px) {
-  .sp__none{
-    display: none;
-  }
 }
 
 
@@ -211,7 +214,7 @@ img.header-logo{
 }
 @media (max-width: 1024px) {
   .slick-next {
-    right: -10px !important;
+    right: -13px !important;
   }
 }
 @media (max-width: 768px) {
@@ -224,11 +227,11 @@ img.header-logo{
   background-size: contain !important;
 }
 .slick-prev {
-  left: -6px !important;
+  left: -9px !important;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .slick-prev {
-    left: -4px !important;
+    left: -9px !important;
   }
 }
 @media (max-width: 768px) {
