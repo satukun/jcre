@@ -4,44 +4,43 @@
 
 /* m-header */
 .m-header {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 0 1%;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	padding: 0 1%;
 }
 @media (max-width: 1280px) {
-  .m-header {
-    padding: 0 2%;
-  }
+	.m-header {
+		padding: 0 2%;
+	}
 }
 @media (max-width: 768px) {
-  .m-header {
-    padding: 0 3%;
-  }
+	.m-header {
+		padding: 0 3%;
+	}
 }
 
 /* header-logo */
-img.header-logo{
-  width: 8%;
-  height: auto;
+img.header-logo {
+	width: 8%;
+	height: auto;
 }
 @media (max-width: 1280px) {
-  img.header-logo{
-    width: 12%;
-  }
+	img.header-logo {
+		width: 12%;
+	}
 }
 @media (max-width: 1024px) {
-  img.header-logo{
-    width: 12%;
-  }
+	img.header-logo {
+		width: 12%;
+	}
 }
 @media (max-width: 768px) {
-  img.header-logo{
-    width: auto;
-    height: 40px;
-  }
+	img.header-logo {
+		width: auto;
+		height: 40px;
+	}
 }
-
 
 /* m-header__inner */
 .m-header__inner {
@@ -51,8 +50,8 @@ img.header-logo{
 
 /* weatherInfo */
 .weatherInfo {
-  width: 90%;
-  font-size: 11px;
+	width: 90%;
+	font-size: 11px;
 }
 @media (max-width: 1280px) {
 	.weatherInfo {
@@ -60,17 +59,17 @@ img.header-logo{
 	}
 }
 @media (max-width: 1024px) {
-  .weatherInfo {
-    column-gap: 2%;
-    margin-left: 1%;
-  }
+	.weatherInfo {
+		column-gap: 2%;
+		margin-left: 1%;
+	}
 }
 @media (max-width: 768px) {
-  .weatherInfo {
-    column-gap: 2%;
-    margin-left: 3%;
-    font-size: 13px;
-  }
+	.weatherInfo {
+		column-gap: 2%;
+		margin-left: 3%;
+		font-size: 13px;
+	}
 }
 
 /* representativeCityName */
@@ -83,9 +82,9 @@ img.header-logo{
 	}
 }
 @media (max-width: 768px) {
-  .m-header .representativeCityName {
-    width: 70px;
-  }
+	.m-header .representativeCityName {
+		width: 70px;
+	}
 }
 .m-header .representativeCityName div div:first-of-type {
 	margin-bottom: 8px;
@@ -93,7 +92,7 @@ img.header-logo{
 
 /* weatherItemName */
 .m-header .weatherItemName {
-  width: 9%;
+	width: 9%;
 }
 @media (max-width: 1280px) {
 	.m-header .weatherItemName {
@@ -101,9 +100,9 @@ img.header-logo{
 	}
 }
 @media (max-width: 768px) {
-  .m-header .weatherItemName {
-    display: none;
-  }
+	.m-header .weatherItemName {
+		display: none;
+	}
 }
 .m-header .weatherItemName div:first-of-type div:first-of-type {
 	margin-bottom: 5px;
@@ -117,10 +116,10 @@ img.header-logo{
 
 /* weatherForecastData */
 #slider-weatherForecastData {
-  max-width: 770px;
-  flex: 1;
-  display: flex;
-  align-items: center;
+	max-width: 770px;
+	flex: 1;
+	display: flex;
+	align-items: center;
 }
 @media (max-width: 1280px) {
 	#slider-weatherForecastData {
@@ -129,27 +128,27 @@ img.header-logo{
 	}
 }
 @media (max-width: 1024px) {
-  #slider-weatherForecastData {
-    width: 100%;
-    max-width: 185px;
-  }
+	#slider-weatherForecastData {
+		width: 100%;
+		max-width: 185px;
+	}
 }
 @media (max-width: 768px) {
-  #slider-weatherForecastData {
-    width: 100%;
-    max-width: 190px;
-  }
+	#slider-weatherForecastData {
+		width: 100%;
+		max-width: 190px;
+	}
 }
 .m-header .weatherForecastData {
-  width: 12%;
+	width: 12%;
 }
 @media (max-width: 768px) {
-  .m-header .weatherForecastData {
-    width: 100px;
-  }
-  .m-header .weatherForecastData:not(:first-of-type) {
-    display: none;
-  }
+	.m-header .weatherForecastData {
+		width: 100px;
+	}
+	.m-header .weatherForecastData:not(:first-of-type) {
+		display: none;
+	}
 }
 .slick-initialized .slick-slide {
 	display: flex !important;
@@ -160,14 +159,14 @@ img.header-logo{
 
 /* ログイン ドロップダウン */
 .btn.btn-secondary.dropdown-toggle.btn.dropdown-toggle.btn-secondary.btn-sm {
-  position: relative;
-  text-align: right;
-  font-size: 11px;
+	position: relative;
+	text-align: right;
+	font-size: 11px;
 }
 @media (max-width: 768px) {
-  .btn.btn-secondary.dropdown-toggle.btn.dropdown-toggle.btn-secondary.btn-sm {
-    font-size: 13px;
-  }
+	.btn.btn-secondary.dropdown-toggle.btn.dropdown-toggle.btn-secondary.btn-sm {
+		font-size: 13px;
+	}
 }
 .dropdown-toggle:after {
 	position: absolute;
@@ -177,9 +176,10 @@ img.header-logo{
 	-webkit-transform: translateY(-50%);
 }
 @media (max-width: 1280px) {
-  .btn-group-sm>.btn, .btn-sm{
-    padding: 0.25rem 0.5rem 0.25rem 0.25rem;
-  }
+	.btn-group-sm > .btn,
+	.btn-sm {
+		padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+	}
 }
 @media (max-width: 1280px) {
 	.dropdown.dropdown.btn-group.b-dropdown.m-md-2 {
@@ -207,9 +207,9 @@ img.header-logo{
 	right: -13px !important;
 }
 @media (max-width: 1024px) {
-  .slick-next {
-    right: -13px !important;
-  }
+	.slick-next {
+		right: -13px !important;
+	}
 }
 @media (max-width: 768px) {
 	.slick-next {
@@ -221,12 +221,12 @@ img.header-logo{
 	background-size: contain !important;
 }
 .slick-prev {
-  left: -9px !important;
+	left: -9px !important;
 }
 @media (max-width: 1024px) {
-  .slick-prev {
-    left: -9px !important;
-  }
+	.slick-prev {
+		left: -9px !important;
+	}
 }
 @media (max-width: 768px) {
 	.slick-prev {
@@ -240,21 +240,6 @@ img.header-logo{
 
 /* menuArea Compatible with 768px or less */
 @media (max-width: 768px) {
-  .o-Sidebar{
-    min-width: 100px;
-  }
-  .o-Sidebar ul {
-    width: 100px;
-  }
-  .o-Sidebar ul li.is-active a:after {
-    width: calc(100% - 8px);
-  }
-  .l-Content--right {
-    width: calc(100% - 100px);
-  }
-}
-
-@media (max-width: 768px) {
 	.o-Sidebar {
 		min-width: 100px;
 	}
@@ -264,102 +249,158 @@ img.header-logo{
 	.o-Sidebar ul li.is-active a:after {
 		width: calc(100% - 8px);
 	}
-	.l-Content--right {
-		width: calc(100% - 100px);
+	#Responsive-block.l-Content--right {
+		width: calc(768px - 100px);
 	}
 }
 
 /* 林さん 専用*/
 /* 分析サマリ画面のみレスポンシブです#Responsive-block内で書いていただければと思います！ */
-.l-Content--right {
+/* 右ブロック全体 */
+#Responsive-block.l-Content--right {
 	min-width: auto;
 }
 
-#Responsive-block.l-Content--main table {
+/* テーブル */
+#Responsive-block.l-Content--right table {
 	min-width: auto;
 }
-
-#Responsive-block.l-Content--main .l-refine {
+#Responsive-block.l-Content--right .l-refine {
 	overflow-x: auto;
 	background-color: white;
 }
 
 @media screen and (max-width: 1280px) {
+	/* ヘッダー下 */
+	#Responsive-block.l-Content--right .o-refine {
+		width: calc(1280px - 120px);
+	}
+
 	/* グラフ */
-	#Responsive-block.l-Content--main .p-pagenationWrap {
+	#Responsive-block.l-Content--right .p-pagenationWrap {
 		flex-wrap: wrap;
 		gap: 21px 0;
 	}
-
-	#Responsive-block.l-Content--main .p-canvas {
-        padding: 30px 20px;
+	#Responsive-block.l-Content--right .a-amount .p-canvas {
+		padding: 0 20px 30px;
 	}
-
-	#Responsive-block.l-Content--main .o-refine__Inner {
+	#Responsive-block.l-Content--right .o-refine__Inner {
 		flex-wrap: wrap;
 		gap: 21px 0;
 	}
-
-    /* グラフ左側 */
-	#Responsive-block.l-Content--main .a-amount--left {
-        width: 280px;
+	#Responsive-block.l-Content--right .chartBox {
+		height: 640px;
 	}
-	#Responsive-block.l-Content--main .a-amount__box:nth-child(2) {
-        width: 45%!important;
+
+	/* グラフ左側 */
+	#Responsive-block.l-Content--right .a-amount--left {
+		width: 280px;
+	}
+	#Responsive-block.l-Content--right .a-amount__box:nth-child(2) {
+		width: 60% !important;
+	}
+
+	/* テーブル */
+	#Responsive-block.l-Content--right table {
+		min-width: 1280px;
 	}
 }
 @media screen and (max-width: 1024px) {
-    	/* ヘッダー下 */
-	#Responsive-block.l-Content--main .o-refine {
-        width: 930px;
-	}
-	#Responsive-block.l-Content--main .o-select:first-child {
-        margin-left: 230px;
-	}
-	#Responsive-block.l-Content--main .mb-20 .o-select:first-child {
-        margin-left: 0;
+	/* ヘッダー下 */
+	#Responsive-block.l-Content--right .o-refine {
+		width: calc(1024px - 120px);
 	}
 
-	#Responsive-block.l-Content--main .o-refine__Inner {
-        margin-top: -50px;
+	/* ヘッダー下 */
+	#Responsive-block.l-Content--right .o-refine {
+		/* width: calc(1024px - 120px); */
+	}
+	#Responsive-block.l-Content--right .o-select:first-child {
+		margin-left: 230px;
+	}
+	#Responsive-block.l-Content--right .mb-20 .o-select:first-child {
+		margin-left: 0;
+	}
+	#Responsive-block.l-Content--right .o-refine__Inner {
+		margin-top: -50px;
+	}
+	#Responsive-block.l-Content--right .mb-20 .o-refine__Inner {
+		margin-top: 0;
 	}
 
-	#Responsive-block.l-Content--main .mb-20 .o-refine__Inner {
-        margin-top: 0;
+	/* グラフ */
+	#Responsive-block.l-Content--right .chartBox {
+		height: 700px;
 	}
-
-
-
-	#Responsive-block.l-Content--main table {
-		min-width: 1280px;
-	}
-
-	#Responsive-block.l-Content--main .a-amount .p-canvas {
+	#Responsive-block.l-Content--right .a-amount .p-canvas {
 		width: 100%;
 		padding: 0;
 	}
-
-	#Responsive-block.l-Content--main .a-amount--left {
-		width: 100%;
-		border-right: none;
-		padding-right: 0;
-	}
-
-	#Responsive-block.l-Content--main .a-amount {
+	#Responsive-block.l-Content--right .a-amount {
 		flex-direction: column-reverse;
 		gap: 40px;
 	}
 
-    #Responsive-block.l-Content--main .o-refine button {
-		/* position: static; */
-		/* margin-top: 21px; */
-	}
-
-    /* グラフ */
-    #Responsive-block.l-Content--main .a-amount--left {
+	/* グラフ下 */
+	#Responsive-block.l-Content--right .a-amount--left {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		column-gap: 80px;
+		width: 100%;
+		column-gap: 40px;
+		border-right: none;
+		padding-right: 0;
+		border-top: 1px solid #dadada;
+		padding-top: 40px;
+	}
+	#Responsive-block.l-Content--right .a-amount__box:nth-child(2) {
+		width: 50% !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	/* ヘッダー下 */
+	#Responsive-block.l-Content--right .o-refine {
+		width: 100%;
+		padding: 30px 16px 70px;
+	}
+	#Responsive-block.l-Content--right .o-select:first-child {
+		margin-left: 390px;
+	}
+	#Responsive-block.l-Content--right .mb-20 .o-select:first-child {
+		margin-left: 0;
+	}
+	#Responsive-block.l-Content--right .o-refine__Inner {
+		margin-top: -50px;
+	}
+	#Responsive-block.l-Content--right .o-select {
+		margin-right: 10px;
 	}
 
+	/* グラフ */
+	#Responsive-block.l-Content--right .chartBox {
+		height: 700px;
+	}
+	#Responsive-block.l-Content--right .a-amount .p-canvas {
+		width: 100%;
+		padding: 0;
+	}
+	#Responsive-block.l-Content--right .a-amount {
+		flex-direction: column-reverse;
+		gap: 40px;
+	}
+
+	/* グラフ下 */
+	#Responsive-block.l-Content--right .a-amount--left {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		width: 100%;
+		column-gap: 40px;
+		border-right: none;
+		padding-right: 0;
+		border-top: 1px solid #dadada;
+		padding-top: 40px;
+	}
+	#Responsive-block.l-Content--right .a-amount__box:nth-child(2) {
+		width: 50% !important;
+	}
 }
