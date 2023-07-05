@@ -102,7 +102,7 @@
     max-width: 370px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   #slider-weatherForecastData {
     width: 100%;
     max-width: 185px;
