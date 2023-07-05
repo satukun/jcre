@@ -7,6 +7,7 @@
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  padding: 0 1.7%;
 }
 @media (max-width: 1024px) {
   .m-header {
@@ -31,23 +32,28 @@
 /* weatherInfo */
 .weatherInfo {
   width: 90%;
-  column-gap: 1%;
+  column-gap: 0.5%;
+}
+@media (max-width: 1280px) {
+  .weatherInfo {
+    column-gap: 1%;
+  }
 }
 @media (max-width: 1024px) {
   .weatherInfo {
-    column-gap: 4%;
-    margin-left: 3%;
+    column-gap: 3%;
+    margin-left: 2%;
   }
 }
 
 
 /* representativeCityName */
 .m-header .representativeCityName {
-  width: 6%;
+  width: 5%;
 }
 @media (max-width: 1280px) {
   .m-header .representativeCityName {
-    width: 41px;
+    width: 45px;
   }
 }
 .m-header .representativeCityName div div:first-of-type {
@@ -57,7 +63,7 @@
 
 /* weatherItemName */
 .m-header .weatherItemName {
-  width: 12%;
+  width: 10%;
 }
 @media (max-width: 1280px) {
   .m-header .weatherItemName {
