@@ -16,6 +16,8 @@
   
     <link rel="stylesheet" type="text/css" href="./css/notosansjapanese.css"><link rel="stylesheet" type="text/css" href="./css/vendors.app.css"><link rel="stylesheet" type="text/css" href="./css/app.css"><link rel="stylesheet" type="text/css" href="./css/bootstrap-datepicker.min.css"><link rel="stylesheet" type="text/css" href="./css/jquery.stickytable.min.css"><link rel="stylesheet" type="text/css" href="./css/summary.css"><link rel="stylesheet" type="text/css" href="./css/common.css">
     <link rel="stylesheet" type="text/css" href="./css/reponsive.css">
+	  <link rel="stylesheet" href="css/slick.css">
+  	<link rel="stylesheet" href="css/slick-theme.css">
 
 
   
@@ -194,7 +196,7 @@
         </div>
       </div>
     </div>
-    <div class="weatherItemName">
+    <div class="weatherItemName sp__none">
       <div>
         <div>気温(℃)</div>
         <div>湿度(%)</div>
@@ -205,6 +207,9 @@
         <div>日没時間</div>
       </div>
     </div>
+
+    <div id="slider-weatherForecastData">
+
     <div class="weatherForecastData">
       <div class="weatherNameDisplayFrame">
         <div>
@@ -238,7 +243,8 @@
         </div>
       </div>
     </div>
-    <div class="weatherForecastData">
+
+    <div class="weatherForecastData sp__none">
       <div class="weatherNameDisplayFrame">
         <div>
           6/8(木)
@@ -271,7 +277,8 @@
         </div>
       </div>
     </div>
-    <div class="weatherForecastData">
+
+    <div class="weatherForecastData sp__none">
       <div class="weatherNameDisplayFrame">
         <div>
           6/9(金)
@@ -304,7 +311,8 @@
         </div>
       </div>
     </div>
-    <div class="weatherForecastData">
+
+    <div class="weatherForecastData sp__none">
       <div class="weatherNameDisplayFrame">
         <div>
           6/10(土)
@@ -337,7 +345,8 @@
         </div>
       </div>
     </div>
-    <div class="weatherForecastData">
+
+    <div class="weatherForecastData sp__none">
       <div class="weatherNameDisplayFrame">
         <div>
           6/11(日)
@@ -370,7 +379,8 @@
         </div>
       </div>
     </div>
-    <div class="weatherForecastData">
+
+    <div class="weatherForecastData sp__none">
       <div class="weatherNameDisplayFrame">
         <div>
           6/12(月)
@@ -403,7 +413,8 @@
         </div>
       </div>
     </div>
-    <div class="weatherForecastData">
+
+    <div class="weatherForecastData sp__none">
       <div class="weatherNameDisplayFrame">
         <div>
           6/13(火)
@@ -436,12 +447,14 @@
         </div>
       </div>
     </div>
+
+  </div>
+
   </div>
   <div class="m-header__inner">
     <div>
       <div class="dropdown dropdown btn-group b-dropdown m-md-2">
-        <a class="btn btn-secondary dropdown-toggle btn dropdown-toggle btn-secondary btn-sm" href="./summary.html?viewdivision=1#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="1"> テストユーザー_JFS-YB（ログイン中）
-        </a>
+        <a class="btn btn-secondary dropdown-toggle btn dropdown-toggle btn-secondary btn-sm" href="./summary.html?viewdivision=1#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="1">テストユーザー_JFS-YB<br>（ログイン中）</a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
           <a class="dropdown-item" href="./summary.html?viewdivision=1#">テストユーザー_JFS-YB（ログイン中）</a>
               <a class="dropdown-item" href="./summary.html?viewdivision=1#" id="logoutLink">ログアウト</a>
@@ -4852,5 +4865,6 @@
     <script src="./js/jquery.stickytable.min.js" type="text/javascript"></script>
     <script src="./js/summary.js" type="text/javascript"></script>
     <script src="./js/weather.js" type="text/javascript"></script>
+    <script src="./js/slick.min.js" type="text/javascript"></script>
 
 </body></html>
