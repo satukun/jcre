@@ -4,279 +4,304 @@
 
 /* m-header */
 .m-header {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 0 1.7%;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	padding: 0 1.7%;
 }
 @media (max-width: 1024px) {
-  .m-header {
-    padding: 0 15px;
-  }
+	.m-header {
+		padding: 0 15px;
+	}
 }
 
 /* header-logo */
 @media (max-width: 1024px) {
-  img.header-logo{
-    height: 40px;
-  }
+	img.header-logo {
+		height: 40px;
+	}
 }
 
 /* m-header__inner */
 .m-header__inner {
-  display: block;
-  margin-left: auto;
+	display: block;
+	margin-left: auto;
 }
-
 
 /* weatherInfo */
 .weatherInfo {
-  width: 90%;
-  column-gap: 0.5%;
+	width: 90%;
+	column-gap: 0.5%;
 }
 @media (max-width: 1280px) {
-  .weatherInfo {
-    column-gap: 1%;
-  }
+	.weatherInfo {
+		column-gap: 1%;
+	}
 }
 @media (max-width: 1024px) {
-  .weatherInfo {
-    column-gap: 3%;
-    margin-left: 2%;
-  }
+	.weatherInfo {
+		column-gap: 3%;
+		margin-left: 2%;
+	}
 }
-
 
 /* representativeCityName */
 .m-header .representativeCityName {
-  width: 5%;
+	width: 5%;
 }
 @media (max-width: 1280px) {
-  .m-header .representativeCityName {
-    width: 45px;
-  }
+	.m-header .representativeCityName {
+		width: 45px;
+	}
 }
 .m-header .representativeCityName div div:first-of-type {
-  margin-bottom: 8px;
+	margin-bottom: 8px;
 }
-
 
 /* weatherItemName */
 .m-header .weatherItemName {
-  width: 10%;
+	width: 10%;
 }
 @media (max-width: 1280px) {
-  .m-header .weatherItemName {
-    width: 95px;
-  }
+	.m-header .weatherItemName {
+		width: 95px;
+	}
 }
 .m-header .weatherItemName div:first-of-type div:first-of-type {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 .m-header .weatherItemName div:last-of-type div:first-of-type {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 .m-header .weatherItemName div:last-of-type div:nth-of-type(2) {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
-
 
 /* weatherForecastData */
 .m-header .weatherForecastData {
-  width: 12%;
-  font-size:min(0.8vw,15px);
+	width: 12%;
+	font-size: min(0.8vw, 15px);
 }
 @media (max-width: 768px) {
-  .m-header .weatherForecastData {
-    width: 80px;
-  }
+	.m-header .weatherForecastData {
+		width: 80px;
+	}
 }
 #slider-weatherForecastData {
-  flex: 1;
-  display: flex;
-  align-items: center;
+	flex: 1;
+	display: flex;
+	align-items: center;
 }
 @media (max-width: 1280px) {
-  #slider-weatherForecastData {
-    width: 100%;
-    max-width: 370px;
-  }
+	#slider-weatherForecastData {
+		width: 100%;
+		max-width: 370px;
+	}
 }
 @media (max-width: 1023px) {
-  #slider-weatherForecastData {
-    width: 100%;
-    max-width: 185px;
-  }
+	#slider-weatherForecastData {
+		width: 100%;
+		max-width: 185px;
+	}
 }
 .slick-initialized .slick-slide {
-  display: flex !important;
+	display: flex !important;
 }
 .img.weather-icon {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 @media (max-width: 768px) {
-  .sp__none{
-    display: none;
-  }
+	.sp__none {
+		display: none;
+	}
 }
-
 
 /* ログイン ドロップダウン */
 .btn.btn-secondary.dropdown-toggle.btn.dropdown-toggle.btn-secondary.btn-sm {
-  position: relative;
-  text-align: right;
+	position: relative;
+	text-align: right;
 }
 .dropdown-toggle:after {
-  position: absolute;
-  top: 50%;
-  right: -6%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
+	position: absolute;
+	top: 50%;
+	right: -6%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 }
 @media (max-width: 1280px) {
-  .btn-group-sm>.btn, .btn-sm{
-    font-size: 0.7rem;
-    padding: 0.25rem 0.5rem 0.25rem 0.25rem;
-  }
+	.btn-group-sm > .btn,
+	.btn-sm {
+		font-size: 0.7rem;
+		padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+	}
 }
 @media (max-width: 1280px) {
-  .dropdown.dropdown.btn-group.b-dropdown.m-md-2{
-    margin: 0.3rem !important;
-  }
+	.dropdown.dropdown.btn-group.b-dropdown.m-md-2 {
+		margin: 0.3rem !important;
+	}
 }
-
 
 /* slick 矢印 */
 .slick-arrow {
-  z-index: 2 !important;
-  width: 15px !important;
-  height: 15px !important;
+	z-index: 2 !important;
+	width: 15px !important;
+	height: 15px !important;
 }
 
 .slick-arrow:before {
-  opacity: 1 !important;
-  content: "" !important;
-  width: 100% !important;
-  height: 100% !important;
-  position: absolute;
-  top: 0;
-  left: 0;
+	opacity: 1 !important;
+	content: "" !important;
+	width: 100% !important;
+	height: 100% !important;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .slick-next {
-  right: -13px !important;
+	right: -13px !important;
 }
 @media (max-width: 1024px) {
-  .slick-next {
-    right: -10px !important;
-  }
+	.slick-next {
+		right: -10px !important;
+	}
 }
 @media (max-width: 768px) {
-  .slick-next {
-    display: none !important;
-  }
+	.slick-next {
+		display: none !important;
+	}
 }
 .slick-next:before {
-  background: url(../img/arrow-right.png) !important;
-  background-size: contain !important;
+	background: url(../img/arrow-right.png) !important;
+	background-size: contain !important;
 }
 .slick-prev {
-  left: -6px !important;
+	left: -6px !important;
 }
 @media (max-width: 1023px) {
-  .slick-prev {
-    left: -4px !important;
-  }
+	.slick-prev {
+		left: -4px !important;
+	}
 }
 @media (max-width: 768px) {
-  .slick-prev {
-    display: none !important;
-  }
+	.slick-prev {
+		display: none !important;
+	}
 }
 .slick-prev:before {
-  background: url(../img/arrow-left.png) !important;
-  background-size: contain !important;
+	background: url(../img/arrow-left.png) !important;
+	background-size: contain !important;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* menuArea Compatible with 768px or less */
-.o-Sidebar.l-Content--left {}
-
-@media (max-width: 768px) {
-  .o-Sidebar{
-    min-width: 100px;
-  }
-  .o-Sidebar ul {
-    width: 100px;
-  }
-  .o-Sidebar ul li.is-active a:after {
-    width: calc(100% - 8px);
-  }
-  .l-Content--right {
-    width: calc(100% - 100px);
-  }
+.o-Sidebar.l-Content--left {
 }
 
+@media (max-width: 768px) {
+	.o-Sidebar {
+		min-width: 100px;
+	}
+	.o-Sidebar ul {
+		width: 100px;
+	}
+	.o-Sidebar ul li.is-active a:after {
+		width: calc(100% - 8px);
+	}
+	.l-Content--right {
+		width: calc(100% - 100px);
+	}
+}
 
 /* 林さん 専用*/
 /* 分析サマリ画面のみレスポンシブです#Responsive-block内で書いていただければと思います！ */
-#Responsive-block.l-Content--main {}
 .l-Content--right {
-    min-width: auto;
+	min-width: auto;
 }
 
 #Responsive-block.l-Content--main table {
-    min-width: auto;
+	min-width: auto;
 }
 
 #Responsive-block.l-Content--main .l-refine {
-    overflow-x: auto;
-    background-color: white;
+	overflow-x: auto;
+	background-color: white;
 }
 
-@media screen and (max-width:1280px) {
-    /* グラフ */
-    #Responsive-block.l-Content--main .p-pagenationWrap{
-        flex-wrap: wrap;
-        gap: 21px 0;
-    }
+@media screen and (max-width: 1280px) {
+	/* グラフ */
+	#Responsive-block.l-Content--main .p-pagenationWrap {
+		flex-wrap: wrap;
+		gap: 21px 0;
+	}
 
-    #Responsive-block.l-Content--main .o-refine__Inner {
-        flex-wrap: wrap;
-        gap: 21px 0;
-    }
+	#Responsive-block.l-Content--main .p-canvas {
+        padding: 30px 20px;
+	}
+
+	#Responsive-block.l-Content--main .o-refine__Inner {
+		flex-wrap: wrap;
+		gap: 21px 0;
+	}
+
+    /* グラフ左側 */
+	#Responsive-block.l-Content--main .a-amount--left {
+        width: 280px;
+	}
+	#Responsive-block.l-Content--main .a-amount__box:nth-child(2) {
+        width: 45%!important;
+	}
+}
+@media screen and (max-width: 1024px) {
+    	/* ヘッダー下 */
+	#Responsive-block.l-Content--main .o-refine {
+        width: 930px;
+	}
+	#Responsive-block.l-Content--main .o-select:first-child {
+        margin-left: 230px;
+	}
+	#Responsive-block.l-Content--main .mb-20 .o-select:first-child {
+        margin-left: 0;
+	}
+
+	#Responsive-block.l-Content--main .o-refine__Inner {
+        margin-top: -50px;
+	}
+
+	#Responsive-block.l-Content--main .mb-20 .o-refine__Inner {
+        margin-top: 0;
+	}
+
+
+
+	#Responsive-block.l-Content--main table {
+		min-width: 1280px;
+	}
+
+	#Responsive-block.l-Content--main .a-amount .p-canvas {
+		width: 100%;
+		padding: 0;
+	}
+
+	#Responsive-block.l-Content--main .a-amount--left {
+		width: 100%;
+		border-right: none;
+		padding-right: 0;
+	}
+
+	#Responsive-block.l-Content--main .a-amount {
+		flex-direction: column-reverse;
+		gap: 40px;
+	}
 
     #Responsive-block.l-Content--main .o-refine button {
-        position: static;
-        margin-top: 21px;
-    }
-}
-@media screen and (max-width:1024px) {
-    #Responsive-block.l-Content--main table {
-        min-width: 1280px;
-    }
+		/* position: static; */
+		/* margin-top: 21px; */
+	}
 
-    #Responsive-block.l-Content--main .a-amount .p-canvas {
-        width: 100%;
-        padding: 0;
-    }
-
+    /* グラフ */
     #Responsive-block.l-Content--main .a-amount--left {
-        width: 100%;
-        border-right: none;
-        padding-right: 0;
-    }
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 80px;
+	}
 
-    #Responsive-block.l-Content--main .a-amount {
-     flex-direction: column-reverse;
-     gap: 40px;
-    }
 }
