@@ -74,7 +74,7 @@ img.header-logo {
 
 /* representativeCityName */
 .m-header .representativeCityName {
-	width: 5%;
+  width: 50px;
 }
 @media (max-width: 1280px) {
 	.m-header .representativeCityName {
@@ -92,7 +92,7 @@ img.header-logo {
 
 /* weatherItemName */
 .m-header .weatherItemName {
-	width: 9%;
+  width: 95px;
 }
 @media (max-width: 1280px) {
 	.m-header .weatherItemName {
