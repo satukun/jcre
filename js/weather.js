@@ -2,11 +2,11 @@ $(function () {
 
   function checkBreakPoint() {
     w = $(window).width();
-    if (w <= 1280) {
-      // 1280px以下のとき
+    if (w <= 1540) {
+      // 1540px以下のとき
       $('#slider-weatherForecastData').not('.slick-initialized').slick({
         //スライドさせる
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         responsive: [
           {
@@ -22,7 +22,7 @@ $(function () {
       //スライドさせない
       $('#slider-weatherForecastData').slick('unslick');
     }
-    if (w <= 768) {
+    if (w <= 870) {
       // 768px以下のとき
       //スライドさせない
       $('#slider-weatherForecastData').slick('unslick');
