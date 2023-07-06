@@ -269,14 +269,28 @@ img.header-logo {
 	min-width: auto;
 }
 #Responsive-block.l-Content--right .l-refine {
-	overflow-x: auto;
 	background-color: white;
+}
+/* ヘッダー下 */
+#Responsive-block.l-Content--right .o-refine {
+    padding: 30px 30px 10px;
+}
+#Responsive-block.l-Content--right .o-refine__Inner {
+    max-width: 1800px;
+    flex-wrap: wrap;
+    gap: 21px 0;
 }
 
 @media screen and (max-width: 1280px) {
 	/* ヘッダー下 */
-	#Responsive-block.l-Content--right .o-refine {
-		width: calc(1280px - 120px);
+	#Responsive-block.l-Content--right .o-select:first-child {
+	}
+	#Responsive-block.l-Content--right .mb-20 .o-select:first-child {
+		margin-left: 0;
+	}
+	#Responsive-block.l-Content--right .o-refine__Inner {
+	}
+	#Responsive-block.l-Content--right .mb-20 .o-refine__Inner {
 	}
 
 	/* グラフ */
@@ -310,28 +324,15 @@ img.header-logo {
 }
 
 @media screen and (max-width: 1024px) {
-	/* ヘッダー下 */
-	#Responsive-block.l-Content--right .o-refine {
-		width: calc(1024px - 120px);
-	}
-
-	/* ヘッダー下 */
-	#Responsive-block.l-Content--right .o-select:first-child {
-		margin-left: 230px;
-	}
-	#Responsive-block.l-Content--right .mb-20 .o-select:first-child {
-		margin-left: 0;
-	}
-	#Responsive-block.l-Content--right .o-refine__Inner {
-		margin-top: -50px;
-	}
-	#Responsive-block.l-Content--right .mb-20 .o-refine__Inner {
-		margin-top: 0;
-	}
 
 }
 
 @media screen and (max-width: 1023px) {
+    	/* ヘッダー下 */
+	#Responsive-block.l-Content--right .o-select:last-child {
+        margin-right: 95px;
+	}
+
 	/* グラフ */
 	#Responsive-block.l-Content--right .chartBox {
 		height: 700px;
@@ -365,20 +366,20 @@ img.header-logo {
 	/* ヘッダー下 */
 	#Responsive-block.l-Content--right .o-refine {
 		width: 100%;
-		padding: 30px 16px 70px;
+		padding: 30px 34px 60px;
 	}
-	#Responsive-block.l-Content--right .o-select:first-child {
-		margin-left: 390px;
+    #Responsive-block.l-Content--right .o-refine .o-select label {
+        margin-right: 6px;
 	}
-	#Responsive-block.l-Content--right .mb-20 .o-select:first-child {
-		margin-left: 0;
+    #Responsive-block.l-Content--right .o-refine .o-select {
+        margin-right: 6px;
 	}
-	#Responsive-block.l-Content--right .o-refine__Inner {
-		margin-top: -50px;
+    #Responsive-block.l-Content--right .o-select:last-child {
+        margin-right: 0;
 	}
-	#Responsive-block.l-Content--right .o-select {
-		margin-right: 10px;
-	}
+    #Responsive-block.l-Content--right .o-refine__Inner {
+        justify-content: space-between;
+    }
 
 	/* グラフ */
 	#Responsive-block.l-Content--right .chartBox {
