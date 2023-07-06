@@ -65,6 +65,7 @@
 
 /* weatherForecastData */
 #slider-weatherForecastData {
+	position: relative;
 	max-width: 780px;
 	flex: 1;
 	display: flex;
