@@ -6,24 +6,30 @@ $(function () {
       // 1540px以下のとき
       $('#slider-weatherForecastData').not('.slick-initialized').slick({
         //スライドさせる
-        slidesToShow: 2,
+        slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
           {
+            breakpoint: 1280,
+            settings: {
+            slidesToShow: 2,
+            },
+          },
+          {
             breakpoint: 1024,
             settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             },
           },
         ],
       });
     } else {
-      // 1281以上のとき
+      // 1540以上のとき
       //スライドさせない
       $('#slider-weatherForecastData').slick('unslick');
     }
-    if (w <= 870) {
-      // 768px以下のとき
+    if (w <= 980) {
+      // 980px以下のとき
       //スライドさせない
       $('#slider-weatherForecastData').slick('unslick');
     } 
