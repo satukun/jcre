@@ -8,18 +8,18 @@
 	max-width: 100%;
 	box-sizing: border-box;
 	justify-content: flex-start;
-	padding: 0 0.8%;
+	padding: 0 15px;
 }
 
 @media (max-width: 1280px) {
 	.m-header {
-		padding: 0 2%;
+		padding: 0 15px;
 	}
 }
 
 @media (max-width: 768px) {
 	.m-header {
-		padding: 0 3%;
+		padding: 0 25px;
 	}
 }
 
@@ -56,27 +56,20 @@ img.header-logo {
 .weatherInfo {
 	width: 95%;
 	font-size: 12px;
-	margin-left: 15px;
+	margin-left: 8px;
 }
 
 @media (max-width: 1280px) {
 	.weatherInfo {
-		column-gap: 1%;
+		column-gap: 10px;
 		margin-left: 10px;
-	}
-}
-
-@media (max-width: 1024px) {
-	.weatherInfo {
-		font-size: 11px;
 	}
 }
 
 @media (max-width: 768px) {
 	.weatherInfo {
-		column-gap: 2%;
+		column-gap: 15px;
 		margin-left: 20px;
-		font-size: 13px;
 	}
 }
 
@@ -99,7 +92,7 @@ img.header-logo {
 /* weatherItemName */
 .m-header .weatherItemName {
 	width: 100%;
-	max-width: 120px;
+	max-width: 110px;
 }
 
 @media (max-width: 1280px) {
@@ -137,14 +130,14 @@ img.header-logo {
 @media (max-width: 1280px) {
 	#slider-weatherForecastData {
 		width: 100%;
-		max-width: 370px;
+		max-width: 310px;
 	}
 }
 
 @media (max-width: 1024px) {
 	#slider-weatherForecastData {
 		width: 100%;
-		max-width: 180px;
+		max-width: 120px;
 	}
 }
 
@@ -156,17 +149,29 @@ img.header-logo {
 }
 
 .m-header .weatherForecastData {
-	width: 14%;
+	width: 91px;
 }
 
 @media (max-width: 768px) {
 	.m-header .weatherForecastData {
-		width: 100px;
+		width: 95px;
 	}
 
 	.m-header .weatherForecastData:not(:first-of-type) {
 		display: none;
 	}
+}
+
+.m-header .weatherForecastData .weatherNameDisplayFrame{
+	margin-right: 8px;
+}
+
+.m-header .weatherForecastData .weatherNameDisplayFrame > div:nth-of-type(2){
+	text-align: center;
+}
+
+.m-header .weatherForecastData > div:last-of-type div  {
+	margin: 4px 0;
 }
 
 .slick-initialized .slick-slide {
@@ -184,18 +189,6 @@ img.header-logo {
 	font-size: 12px;
 }
 
-@media (max-width: 1024px) {
-.btn.btn-secondary.dropdown-toggle.btn.dropdown-toggle.btn-secondary.btn-sm {
-	font-size: 11px;
-}
-}
-
-@media (max-width: 768px) {
-	.btn.btn-secondary.dropdown-toggle.btn.dropdown-toggle.btn-secondary.btn-sm {
-		font-size: 13px;
-	}
-}
-
 .dropdown-toggle:after {
 	position: absolute;
 	top: 50%;
@@ -204,18 +197,13 @@ img.header-logo {
 	-webkit-transform: translateY(-50%);
 }
 
-@media (max-width: 1280px) {
-
-	.btn-group-sm>.btn,
-	.btn-sm {
-		padding: 0.25rem 0.5rem 0.25rem 0.25rem;
-	}
+.btn-group-sm>.btn,
+.btn-sm {
+	padding: 0.25rem 0.5rem 0.25rem 0.25rem;
 }
 
-@media (max-width: 1280px) {
-	.dropdown.dropdown.btn-group.b-dropdown.m-md-2 {
-		margin: 0.3rem !important;
-	}
+.dropdown.dropdown.btn-group.b-dropdown.m-md-2 {
+	margin: 0.3rem !important;
 }
 
 /* slick 矢印 */
@@ -241,7 +229,7 @@ img.header-logo {
 
 @media (max-width: 1024px) {
 	.slick-next {
-		right: -13px !important;
+		right: -2px !important;
 	}
 }
 
@@ -262,7 +250,7 @@ img.header-logo {
 
 @media (max-width: 1024px) {
 	.slick-prev {
-		left: -9px !important;
+		left: 0 !important;
 	}
 }
 
