@@ -119,7 +119,7 @@ img.header-logo {
 @media (max-width: 1024px) {
 	#slider-weatherForecastData {
 		width: 100%;
-		max-width: 120px;
+		max-width: 110px;
 	}
 }
 
@@ -221,7 +221,7 @@ img.weather-icon {
 
 @media (max-width: 1024px) {
 	.slick-next {
-		right: -6px !important;
+		right: -9px !important;
 	}
 }
 
