@@ -1,5 +1,3 @@
-/* いそむらさん 専用*/
-/* ヘッダーは全ページでレスポンシブになります */
 /* headerArea */
 
 /* m-header */
@@ -276,8 +274,6 @@ img.weather-icon {
 	}
 }
 
-/* 林さん 専用*/
-/* 分析サマリ画面のみレスポンシブです#Responsive-block内で書いていただければと思います！ */
 /* 右ブロック全体 */
 #Responsive-block.l-Content--right {
 	min-width: auto;
