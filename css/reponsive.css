@@ -296,8 +296,13 @@ img.weather-icon {
 #Responsive-block.l-Content--right .chartBox {
 	height: 630px;
 }
+
+/* グラフ左側 */
+#Responsive-block.l-Content--right .a-amount--left {
+	width: 280px;
+}
 #Responsive-block.l-Content--right .a-amount__box:nth-child(2) {
-	width: 50% !important;
+	width: 60% !important;
 }
 
 /* テーブル */
@@ -332,16 +337,7 @@ img.weather-icon {
 	#Responsive-block.l-Content--right .chartBox {
 		height: 640px;
 	}
-
-	/* グラフ左側 */
-	#Responsive-block.l-Content--right .a-amount--left {
-		width: 280px;
-	}
-
-	#Responsive-block.l-Content--right .a-amount__box:nth-child(2) {
-		width: 60% !important;
-	}
-
+	
 	/* テーブル */
 	#Responsive-block.l-Content--right table {
 		min-width: 1100px;
