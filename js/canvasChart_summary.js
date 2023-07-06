@@ -165,9 +165,9 @@ function _chart(data) {
           yAxes: [
             {
               display: true,
-              barPercentage: 0.65,
+              barPercentage: 0.7,
               maxBarThickness: 10,
-              categoryPercentage: 0.5,
+              categoryPercentage: 0.6,
               ticks: {
                 fontColor: '#333',
                 fontSize: 14,
