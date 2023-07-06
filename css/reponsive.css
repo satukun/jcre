@@ -178,6 +178,11 @@ img.header-logo {
 	display: flex !important;
 }
 
+.slick-slide img {
+	margin: 0 auto;
+	display: block;
+}
+
 .img.weather-icon {
 	margin: 0 auto;
 }
