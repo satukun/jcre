@@ -162,6 +162,11 @@ img.weather-icon {
 	width: 15px !important;
 	height: 15px !important;
 }
+@media (max-width: 980px) {
+	.slick-arrow {
+		display: none;
+	}
+}
 
 .slick-arrow:before {
 	opacity: 1 !important;
