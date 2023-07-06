@@ -74,7 +74,7 @@ img.header-logo {
 
 /* representativeCityName */
 .m-header .representativeCityName {
-  width: 50px;
+	width: 50px;
 }
 @media (max-width: 1280px) {
 	.m-header .representativeCityName {
@@ -92,7 +92,7 @@ img.header-logo {
 
 /* weatherItemName */
 .m-header .weatherItemName {
-  width: 95px;
+	width: 95px;
 }
 @media (max-width: 1280px) {
 	.m-header .weatherItemName {
@@ -261,9 +261,26 @@ img.header-logo {
 	min-width: auto;
 }
 
+/* ヘッダー下 */
+#Responsive-block.l-Content--right .o-refine {
+	padding: 30px 30px 10px;
+}
+#Responsive-block.l-Content--right .o-refine__Inner {
+	max-width: 1800px;
+	flex-wrap: wrap;
+	gap: 21px 0;
+}
+/* グラフ */
+#Responsive-block.l-Content--right .chartBox {
+	height: 630px;
+}
+#Responsive-block.l-Content--right .a-amount__box:nth-child(2) {
+	width: 50% !important;
+}
+
 /* テーブル */
 #Responsive-block.l-Content--right .p-main--summary__Inner {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 #Responsive-block.l-Content--right table {
 	min-width: auto;
@@ -271,28 +288,8 @@ img.header-logo {
 #Responsive-block.l-Content--right .l-refine {
 	background-color: white;
 }
-/* ヘッダー下 */
-#Responsive-block.l-Content--right .o-refine {
-    padding: 30px 30px 10px;
-}
-#Responsive-block.l-Content--right .o-refine__Inner {
-    max-width: 1800px;
-    flex-wrap: wrap;
-    gap: 21px 0;
-}
 
 @media screen and (max-width: 1280px) {
-	/* ヘッダー下 */
-	#Responsive-block.l-Content--right .o-select:first-child {
-	}
-	#Responsive-block.l-Content--right .mb-20 .o-select:first-child {
-		margin-left: 0;
-	}
-	#Responsive-block.l-Content--right .o-refine__Inner {
-	}
-	#Responsive-block.l-Content--right .mb-20 .o-refine__Inner {
-	}
-
 	/* グラフ */
 	#Responsive-block.l-Content--right .p-pagenationWrap {
 		flex-wrap: wrap;
@@ -324,19 +321,19 @@ img.header-logo {
 }
 
 @media screen and (max-width: 1024px) {
-
-}
-
-@media screen and (max-width: 1023px) {
-    	/* ヘッダー下 */
-	#Responsive-block.l-Content--right .o-select:last-child {
-        margin-right: 95px;
-	}
-
 	/* グラフ */
 	#Responsive-block.l-Content--right .chartBox {
 		height: 700px;
 	}
+}
+
+@media screen and (max-width: 1023px) {
+	/* ヘッダー下 */
+	#Responsive-block.l-Content--right .o-select:last-child {
+		margin-right: 95px;
+	}
+
+	/* グラフ */
 	#Responsive-block.l-Content--right .a-amount .p-canvas {
 		width: 100%;
 		padding: 0;
@@ -368,18 +365,18 @@ img.header-logo {
 		width: 100%;
 		padding: 30px 34px 60px;
 	}
-    #Responsive-block.l-Content--right .o-refine .o-select label {
-        margin-right: 6px;
+	#Responsive-block.l-Content--right .o-refine .o-select label {
+		margin-right: 6px;
 	}
-    #Responsive-block.l-Content--right .o-refine .o-select {
-        margin-right: 6px;
+	#Responsive-block.l-Content--right .o-refine .o-select {
+		margin-right: 6px;
 	}
-    #Responsive-block.l-Content--right .o-select:last-child {
-        margin-right: 0;
+	#Responsive-block.l-Content--right .o-select:last-child {
+		margin-right: 0;
 	}
-    #Responsive-block.l-Content--right .o-refine__Inner {
-        justify-content: space-between;
-    }
+	#Responsive-block.l-Content--right .o-refine__Inner {
+		justify-content: space-between;
+	}
 
 	/* グラフ */
 	#Responsive-block.l-Content--right .chartBox {
