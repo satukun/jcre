@@ -7,7 +7,7 @@ $(function () {
     // ウィンドウの幅を取得
     const windowWidth = $(window).width();
 
-    // ウィンドウの幅が980px以下または1541px以上の場合
+    // ウィンドウの幅が950px以下または1541px以上の場合
     if (windowWidth <= 980 || windowWidth >= 1541) {
       // スライダーが初期化されている場合は非初期化
       if (slider.hasClass("slick-initialized")) {
@@ -28,18 +28,30 @@ $(function () {
 
         // スライダーを初期化
         slider.slick({
-          slidesToShow: 4,
+          slidesToShow: 6,
           slidesToScroll: 1,
           lazyLoad: "ondemand", // 画像の遅延読み込みを有効にする
           responsive: [
             {
-              breakpoint: 1280,
+              breakpoint: 1461,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 5,
               },
             },
             {
-              breakpoint: 1024,
+              breakpoint: 1281,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 1211,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 1071,
               settings: {
                 slidesToShow: 2,
               },
