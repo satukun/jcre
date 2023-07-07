@@ -298,7 +298,7 @@ img.weather-icon {
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
 	/* グラフ */
 	#Responsive-block.l-Content--right .chartBox {
 		height: 700px;
