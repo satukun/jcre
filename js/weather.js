@@ -74,14 +74,14 @@ $(function () {
         });
       }
     }
-    // リサイズイベント後にスライダーの再描画を強制
+    // リサイズイベント後にスライダーの再描画を強制;
     if (slider.hasClass("slick-initialized")) {
       slider.slick("refresh");
     }
   }
 
   // デバウンスを適用してリサイズイベントの負担を軽減
-  $(window).resize(debounce(checkBreakPoint, 250));
+  $(window).resize(debounce(checkBreakPoint, 10));
   // 初回のブレイクポイントのチェックを行う
   checkBreakPoint();
 });

@@ -99,13 +99,13 @@
 }
 
 .m-header .weatherForecastData {
-	width: 150px;
+	flex: 1 !important;
 }
 
 @media (max-width: 980px) {
-	.m-header .weatherForecastData {
+	/* .m-header .weatherForecastData {
 		width: 95px;
-	}
+	} */
 	.m-header .weatherForecastData:not(:first-of-type) {
 		display: none;
 	}
