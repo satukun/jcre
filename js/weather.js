@@ -57,7 +57,7 @@ $(function () {
               },
             },
             {
-              breakpoint: 980,
+              breakpoint: 981,
               settings: 'unslick',
             },
           ],
