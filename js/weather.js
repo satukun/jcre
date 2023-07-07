@@ -23,14 +23,14 @@ $(function () {
         // スライダーが初期化されていない場合は初期化
         // ローディング画像の設定
         slider.find("img[data-lazy]").each(function () {
-          $(this).attr("src", "../img/ajax-loader.gif");
+          $(this).attr("src", "./img/ajax-loader.gif");
         });
 
         // スライダーを初期化
         slider.slick({
           slidesToShow: 6,
           slidesToScroll: 1,
-          lazyLoad: "ondemand", // 画像の遅延読み込みを有効にする
+          // lazyLoad: "ondemand", // 画像の遅延読み込みを有効にする
           responsive: [
             {
               breakpoint: 1461,
@@ -55,6 +55,10 @@ $(function () {
               settings: {
                 slidesToShow: 2,
               },
+            },
+            {
+              breakpoint: 980,
+              settings: 'unslick',
             },
           ],
           // 画像が遅延読み込みされた後に実行される関数
