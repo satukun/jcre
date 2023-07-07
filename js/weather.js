@@ -22,19 +22,10 @@ $(function () {
       if (slider.hasClass("slick-initialized")) {
         slider.slick("unslick");
       }
-      // スライダーが初期化されない場合でも、画像のsrc属性を元の画像に戻す
-      slider.find("img[data-lazy]").each(function () {
-        $(this).attr("src", $(this).attr("data-lazy"));
-      });
     } else {
       // ウィンドウの幅が990px以上1540px以下の場合
       if (!slider.hasClass("slick-initialized")) {
         // スライダーが初期化されていない場合は初期化
-        // ローディング画像の設定
-        slider.find("img[data-lazy]").each(function () {
-          $(this).attr("src", "./img/ajax-loader.gif");
-        });
-
         // スライダーを初期化
         slider.slick({
           slidesToShow: 6,
@@ -66,11 +57,6 @@ $(function () {
               },
             },
           ],
-          // 画像が遅延読み込みされた後に実行される関数
-          onLazyLoaded: function (event, slick, image, imageSource) {
-            // 画像のsrc属性を元の画像に戻す
-            image.attr("src", imageSource);
-          },
         });
       }
     }
