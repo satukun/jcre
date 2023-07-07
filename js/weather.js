@@ -16,8 +16,8 @@ $(function () {
     // ウィンドウの幅を取得
     const windowWidth = $(window).width();
 
-    // ウィンドウの幅が980px以下または1541px以上の場合
-    if (windowWidth <= 980 || windowWidth >= 1541) {
+    // ウィンドウの幅が1000px以下または1541px以上の場合
+    if (windowWidth <= 990 || windowWidth >= 1541) {
       // スライダーが初期化されている場合は非初期化
       if (slider.hasClass("slick-initialized")) {
         slider.slick("unslick");
@@ -27,7 +27,7 @@ $(function () {
         $(this).attr("src", $(this).attr("data-lazy"));
       });
     } else {
-      // ウィンドウの幅が981px以上1540px以下の場合
+      // ウィンドウの幅が990px以上1540px以下の場合
       if (!slider.hasClass("slick-initialized")) {
         // スライダーが初期化されていない場合は初期化
         // ローディング画像の設定
