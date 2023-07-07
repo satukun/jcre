@@ -2,12 +2,21 @@ $(function () {
   // スライダー要素を取得
   const slider = $("#slider-weatherForecastData");
 
+  // デバウンス関数
+  function debounce(func, wait) {
+    let timeout;
+    return function () {
+      clearTimeout(timeout);
+      timeout = setTimeout(func, wait);
+    };
+  }
+
   // ブレイクポイントをチェックし、スライダーの初期化・非初期化を行う関数
   function checkBreakPoint() {
     // ウィンドウの幅を取得
     const windowWidth = $(window).width();
 
-    // ウィンドウの幅が950px以下または1541px以上の場合
+    // ウィンドウの幅が980px以下または1541px以上の場合
     if (windowWidth <= 980 || windowWidth >= 1541) {
       // スライダーが初期化されている場合は非初期化
       if (slider.hasClass("slick-initialized")) {
@@ -56,10 +65,6 @@ $(function () {
                 slidesToShow: 2,
               },
             },
-            {
-              breakpoint: 981,
-              settings: 'unslick',
-            },
           ],
           // 画像が遅延読み込みされた後に実行される関数
           onLazyLoaded: function (event, slick, image, imageSource) {
@@ -69,10 +74,14 @@ $(function () {
         });
       }
     }
+    // リサイズイベント後にスライダーの再描画を強制
+    if (slider.hasClass("slick-initialized")) {
+      slider.slick("refresh");
+    }
   }
 
-  // ウィンドウがリサイズされたときにブレイクポイントのチェックを行う
-  $(window).resize(checkBreakPoint);
+  // デバウンスを適用してリサイズイベントの負担を軽減
+  $(window).resize(debounce(checkBreakPoint, 250));
   // 初回のブレイクポイントのチェックを行う
   checkBreakPoint();
 });
