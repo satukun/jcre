@@ -293,9 +293,7 @@ img.weather-icon {
 	#Responsive-block.l-Content--right .chartBox {
 		height: 700px;
 	}
-}
 
-@media screen and (max-width: 1023px) {
 	/* ヘッダー下 */
 	#Responsive-block.l-Content--right .o-select:last-child {
 		margin-right: 95px;
