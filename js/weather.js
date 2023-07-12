@@ -1,6 +1,7 @@
 $(function () {
   // スライダー要素を取得
   const slider = $("#slider-weatherForecastData");
+  const slickInitialized = $("#slider-weatherForecastData");
 
   // デバウンス関数
   function debounce(func, wait) {
@@ -62,12 +63,12 @@ $(function () {
     }
     // リサイズイベント後にスライダーの再描画を強制;
     if (slider.hasClass("slick-initialized")) {
-      slider.slick("refresh");
+      slickInitialized.animate({ opacity: 1 });
     }
   }
 
   // デバウンスを適用してリサイズイベントの負担を軽減
-  $(window).resize(debounce(checkBreakPoint, 150));
+  $(window).resize(debounce(checkBreakPoint, 100));
   // 初回のブレイクポイントのチェックを行う
   checkBreakPoint();
 });
