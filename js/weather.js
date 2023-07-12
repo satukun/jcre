@@ -67,7 +67,7 @@ $(function () {
   }
 
   // デバウンスを適用してリサイズイベントの負担を軽減
-  $(window).resize(debounce(checkBreakPoint, 10));
+  $(window).resize(debounce(checkBreakPoint, 150));
   // 初回のブレイクポイントのチェックを行う
   checkBreakPoint();
 });
