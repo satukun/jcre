@@ -241,11 +241,11 @@ img.weather-icon {
 #Responsive-block.l-Content--right .o-refine {
 	padding: 30px 30px 10px;
 }
-#Responsive-block.l-Content--right .o-refine__Inner {
+/* #Responsive-block.l-Content--right .o-refine__Inner {
 	max-width: 1800px;
 	flex-wrap: wrap;
 	gap: 21px 0;
-}
+} */
 /* グラフ */
 #Responsive-block.l-Content--right .chartBox {
 	height: 630px;
