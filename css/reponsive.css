@@ -113,19 +113,19 @@
 	}
 }
 
-.m-header .weatherForecastData .weatherNameDisplayFrame{
+.m-header .weatherForecastData .weatherNameDisplayFrame {
 	margin-right: 8px;
 }
 
-.m-header .weatherForecastData .weatherNameDisplayFrame > div:first-of-type{
+.m-header .weatherForecastData .weatherNameDisplayFrame > div:first-of-type {
 	margin-bottom: 2px;
 }
 
-.m-header .weatherForecastData .weatherNameDisplayFrame > div:nth-of-type(2){
+.m-header .weatherForecastData .weatherNameDisplayFrame > div:nth-of-type(2) {
 	text-align: center;
 }
 
-.m-header .weatherForecastData > div:last-of-type div  {
+.m-header .weatherForecastData > div:last-of-type div {
 	margin: 0 0 5px;
 }
 
@@ -158,7 +158,7 @@ img.weather-icon {
 	-webkit-transform: translateY(-50%);
 }
 
-.btn-group-sm>.btn,
+.btn-group-sm > .btn,
 .btn-sm {
 	padding: 0.25rem 0.5rem 0.25rem 0.25rem;
 }
@@ -195,7 +195,6 @@ img.weather-icon {
 	}
 }
 
-
 .slick-next:before {
 	background: url(../img/arrow-right.png) !important;
 	background-size: contain !important;
@@ -206,7 +205,6 @@ img.weather-icon {
 		left: 0 !important;
 	}
 }
-
 
 .slick-prev:before {
 	background: url(../img/arrow-left.png) !important;
@@ -236,16 +234,6 @@ img.weather-icon {
 #Responsive-block.l-Content--right {
 	min-width: auto;
 }
-
-/* ヘッダー下 */
-#Responsive-block.l-Content--right .o-refine {
-	padding: 30px 30px 10px;
-}
-#Responsive-block.l-Content--right .o-refine__Inner {
-	max-width: 1800px;
-	flex-wrap: wrap;
-	gap: 21px 0;
-}
 /* グラフ */
 #Responsive-block.l-Content--right .chartBox {
 	height: 630px;
@@ -273,6 +261,18 @@ img.weather-icon {
 }
 
 @media screen and (max-width: 1280px) {
+	/* テーブル */
+	#Responsive-block.l-Content--right
+	.p-main--summary__Inner
+	.sticky-header
+	.sticky-cell {
+		width: 240px;
+	}
+
+	/* ヘッダー下 */
+	#Responsive-block .o-select:last-child {
+		margin-right: 90px;
+	}
 	/* グラフ */
 	#Responsive-block.l-Content--right .p-pagenationWrap {
 		flex-wrap: wrap;
@@ -291,28 +291,46 @@ img.weather-icon {
 	#Responsive-block.l-Content--right .chartBox {
 		height: 640px;
 	}
-	
+}
+
+@media screen and (max-width: 1024px) {
 	/* テーブル */
 	#Responsive-block.l-Content--right table {
-		min-width: 1100px;
+		min-width: 942px;
+	}
+	#Responsive-block.l-Content--right
+		.p-main--summary__Inner
+		.sticky-header
+		.sticky-cell {
+		width: 150px;
+	}
+	#Responsive-block.l-Content--right
+		.a-tbl__wrap--head
+		th:first-child
+		span:after {
+		right: -1px;
+	}
+	#Responsive-block.l-Content--right .a-tbl__wrap--body tr .sticky-cell {
+		border-right: 3px double #dadada;
+	}
+	#Responsive-block.l-Content--right .a-tbl__wrap--body tr th:first-child span {
+		height: 100%;
+	}
+	#Responsive-block.l-Content--right .a-tbl__wrap--body tr th span {
+		text-indent: 0 !important;
+		padding: 14px;
+		line-height: 1.5;
 	}
 }
 
 @media screen and (max-width: 1023px) {
 	/* グラフ */
-	#Responsive-block.l-Content--right .chartBox {
-		height: 700px;
-	}
-
-	/* ヘッダー下 */
-	#Responsive-block.l-Content--right .o-select:last-child {
-		margin-right: 95px;
-	}
-
-	/* グラフ */
 	#Responsive-block.l-Content--right .a-amount .p-canvas {
 		width: 100%;
 		padding: 0;
+	}
+	#Responsive-block.l-Content--right .chartBox {
+		height: 700px;
 	}
 
 	#Responsive-block.l-Content--right .a-amount {
@@ -338,24 +356,20 @@ img.weather-icon {
 }
 
 @media screen and (max-width: 768px) {
-
 	/* ヘッダー下 */
-	#Responsive-block.l-Content--right .o-refine {
-		width: 100%;
-		padding: 30px 34px 60px;
-	}
-	#Responsive-block.l-Content--right .o-refine .o-select label {
-		margin-right: 6px;
-	}
-	#Responsive-block.l-Content--right .o-refine .o-select {
-		margin-right: 6px;
+	#Responsive-block.l-Content--right
+		.o-refine
+		div:nth-child(3)
+		.o-select:nth-child(1) {
+		margin-right: 220px;
 	}
 	#Responsive-block.l-Content--right .o-select:last-child {
 		margin-right: 0;
 	}
 
-	#Responsive-block.l-Content--right .o-refine__Inner {
-		justify-content: space-between;
+	#Responsive-block.l-Content--right .o-refine {
+		width: 100%;
+		padding: 30px 20px;
 	}
 
 	/* グラフ */
@@ -384,7 +398,6 @@ img.weather-icon {
 		border-top: 1px solid #dadada;
 		padding-top: 40px;
 	}
-
 	#Responsive-block.l-Content--right .a-amount__box:nth-child(2) {
 		width: 50% !important;
 	}
