@@ -261,6 +261,14 @@ img.weather-icon {
 }
 
 @media screen and (max-width: 1280px) {
+	/* テーブル */
+	#Responsive-block.l-Content--right
+	.p-main--summary__Inner
+	.sticky-header
+	.sticky-cell {
+		width: 240px;
+	}
+
 	/* ヘッダー下 */
 	#Responsive-block .o-select:last-child {
 		margin-right: 90px;
@@ -283,17 +291,12 @@ img.weather-icon {
 	#Responsive-block.l-Content--right .chartBox {
 		height: 640px;
 	}
-
-	/* テーブル */
-	#Responsive-block.l-Content--right table {
-		min-width: 1340px;
-	}
 }
 
 @media screen and (max-width: 1024px) {
 	/* テーブル */
 	#Responsive-block.l-Content--right table {
-		min-width: 1040px;
+		min-width: 942px;
 	}
 	#Responsive-block.l-Content--right
 		.p-main--summary__Inner
