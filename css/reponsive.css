@@ -286,16 +286,11 @@ img.weather-icon {
 
 	/* テーブル */
 	#Responsive-block.l-Content--right table {
-		min-width: 1100px;
+		min-width: 1340px;
 	}
 }
 
-@media screen and (max-width: 1023px) {
-	/* グラフ */
-	#Responsive-block.l-Content--right .chartBox {
-		height: 700px;
-	}
-
+@media screen and (max-width: 1024px) {
 	/* ヘッダー下 */
 	#Responsive-block.l-Content--right .o-select:last-child {
 		margin-right: 95px;
@@ -305,6 +300,9 @@ img.weather-icon {
 	#Responsive-block.l-Content--right .a-amount .p-canvas {
 		width: 100%;
 		padding: 0;
+	}
+	#Responsive-block.l-Content--right .chartBox {
+		height: 700px;
 	}
 
 	#Responsive-block.l-Content--right .a-amount {
@@ -327,11 +325,42 @@ img.weather-icon {
 	#Responsive-block.l-Content--right .a-amount__box:nth-child(2) {
 		width: 50% !important;
 	}
+
+	/* テーブル */
+	#Responsive-block.l-Content--right table {
+		min-width: 1040px;
+	}
+	#Responsive-block.l-Content--right
+		.p-main--summary__Inner
+		.sticky-header
+		.sticky-cell {
+		width: 150px;
+	}
+	#Responsive-block.l-Content--right
+		.a-tbl__wrap--head
+		th:first-child
+		span:after {
+		right: -1px;
+	}
+	#Responsive-block.l-Content--right .a-tbl__wrap--body tr .sticky-cell {
+		border-right: 3px double #dadada;
+	}
+	#Responsive-block.l-Content--right .a-tbl__wrap--body tr th:first-child span {
+		height: 100%;
+	}
+	#Responsive-block.l-Content--right .a-tbl__wrap--body tr th span {
+		text-indent: 0 !important;
+		padding: 14px;
+		line-height: 1.5;
+	}
 }
 
 @media screen and (max-width: 768px) {
 	/* ヘッダー下 */
-	#Responsive-block.l-Content--right .o-refine div:nth-child(3) .o-select:nth-child(1) {
+	#Responsive-block.l-Content--right
+		.o-refine
+		div:nth-child(3)
+		.o-select:nth-child(1) {
 		margin-right: 220px;
 	}
 	#Responsive-block.l-Content--right .o-select:last-child {
@@ -369,7 +398,6 @@ img.weather-icon {
 		border-top: 1px solid #dadada;
 		padding-top: 40px;
 	}
-
 	#Responsive-block.l-Content--right .a-amount__box:nth-child(2) {
 		width: 50% !important;
 	}
