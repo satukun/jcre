@@ -179,6 +179,10 @@
   text-indent: 1em !important;
 }
 
+.a-tbl__wrap--body--kwh tr:nth-child(4n+1) th:first-child br.only-sp {
+  display: none;
+}
+
 .a-tbl__wrap--body--yen tr th:first-child span {
   text-indent: 1em !important;
 }

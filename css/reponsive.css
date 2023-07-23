@@ -321,6 +321,9 @@ img.weather-icon {
 		padding: 14px;
 		line-height: 1.5;
 	}
+	#Responsive-block.l-Content--right .a-tbl__wrap--body tr th br.only-sp {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 1023px) {
